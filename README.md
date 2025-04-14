@@ -4,14 +4,20 @@
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
 
-Aplicación móvil interna para consultar stock y precios en tiendas físicas.
+**Repositorio oficial** de la aplicación móvil interna para consultar stock y precios en tiendas físicas.
 
-## 🌟 Características Principales
-- Autenticación JWT para empleados
-- Consulta en tiempo real de stock por tienda
-- Escáner de código de barras integrado
-- Funcionalidad offline con caché local
-- Panel administrativo Django para gestión
+## 🌟 Objetivos del Proyecto
+- ✅ Centralizar información de stock en tiempo real
+- ✅ Reducir tiempos de consulta en un 40%
+- ✅ Funcionar offline en zonas sin conectividad
+- ✅ Integrar escaneo de código de barras
+
+## 🛠️ Tecnologías Principales
+| Área         | Tecnologías                                                                 |
+|--------------|----------------------------------------------------------------------------|
+| **Frontend** | React Native, Expo, Redux Toolkit, NativeBase                              |
+| **Backend**  | Django REST Framework, PostgreSQL, JWT Authentication                      |
+| **DevOps**   | Docker, GitHub Actions, AWS EC2 (para staging)                             |
 
 ## 🚀 Primeros Pasos
 
@@ -21,29 +27,10 @@ Aplicación móvil interna para consultar stock y precios en tiendas físicas.
 - Expo CLI (`npm install -g expo-cli`)
 - PostgreSQL (recomendado para producción)
 
-### 🛠️ Instalación
+### 🔧 Configuración Inicial
 
-#### Backend (Django)
+#### 1. Clonar Repositorio
 ```bash
-# Clonar repositorio
 git clone https://github.com/luchitomario46/aplicacionConsulta.git
-cd aplicacionConsulta/backend
-
-# Configurar entorno virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate  # Windows
-
-# Instalar dependencias
-pip install -r requirements.txt
-
-# Configurar variables de entorno
-cp .env.example .env
-# Editar .env con tus credenciales
-
-# Migraciones iniciales
-python manage.py migrate
-python manage.py createsuperuser
-
-# Iniciar servidor
-python manage.py runserver
+cd aplicacionConsulta
+```
